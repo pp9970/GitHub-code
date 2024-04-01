@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/pp9970/GitHub-code'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run smoke'
+            }
+        }
+        
+    }
+}
