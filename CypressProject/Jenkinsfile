@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'npm run smoke'
+                bat 'npm run smoke'
             }
         }
         
