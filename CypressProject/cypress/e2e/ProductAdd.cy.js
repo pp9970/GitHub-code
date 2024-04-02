@@ -15,7 +15,7 @@ describe('SauceLab',()=>{
     it('productAddToCard',()=>{
         cy.get('.inventory_item_name').eq(0).click({force:true});
         cy.get('button.btn_primary.btn_inventory').click({force:true});
-        cy.get('#shopping_cart_container123').click({force:true});
+        cy.get('#shopping_cart_container').click({force:true});
     })
 
     it('loginTest',()=>{
